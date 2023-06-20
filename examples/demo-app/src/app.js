@@ -30,6 +30,7 @@ import Announcement, {FormLink} from './components/announcement';
 import {replaceLoadDataModal} from './factories/load-data-modal';
 import {replaceMapControl} from './factories/map-control';
 import {replacePanelHeader} from './factories/panel-header';
+import {replaceFeatureActionPanel} from './factories/feature-action-panel';
 import {AUTH_TOKENS, DEFAULT_FEATURE_FLAGS} from './constants/default-settings';
 import {messages} from './constants/localization';
 
@@ -46,7 +47,8 @@ import {CLOUD_PROVIDERS} from './cloud-providers';
 const KeplerGl = require('@kepler.gl/components').injectComponents([
   replaceLoadDataModal(),
   replaceMapControl(),
-  replacePanelHeader()
+  replacePanelHeader(),
+  replaceFeatureActionPanel()
 ]);
 
 // Sample data
