@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Uber Technologies, Inc.
+// Copyright (c) 2023 Uber Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -66,3 +66,7 @@ export const AUTH_TOKENS = {
   EXPORT_MAPBOX_TOKEN: process.env.MapboxExportToken, // eslint-disable-line
   CARTO_CLIENT_ID: process.env.CartoClientId // eslint-disable-line
 };
+
+// TODO: Remove hard-coded value.
+export const REMOTE_DATA_URL =
+  'https://gist.githubusercontent.com/sshirokov/6168839/raw/100bc5588c3fdd7a85fee47e64ce926a2b8b11af/markets.json';
